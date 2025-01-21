@@ -179,4 +179,4 @@ function renumberTasks() {
 // i =  0 task = 1,  0 + 1 output innertext = 1
 // i = 1 task = 2 , 1 + 1 output innertext = 2
 // i = 2 task = 3 , 2 + 1 output innertext = 3
-// and so onn
+// and so on
