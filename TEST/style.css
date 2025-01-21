@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #060e24 ;
+    color: white;
+}
+.container{
+    position: relative;
+    border: solid 0.5px grey;
+    border-radius: 15px;
+    background-color: #1c1e38;
+    width: 500px;
+    margin-right: auto;
+    height: 700px;
+    margin-top: 30px;
+    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5); /* Adds a shadow effect around the modal */
+    scale: 1;
+
+}
+.input-box{
+    margin-left: 70px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-right: 0px;
+    background-color: rgb(4, 31, 54);
+    border: solid 2px grey;
+
+}
+.input-box::placeholder {
+    font-size: 15px; 
+}
+.input-box-description{
+    margin-left: 70px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    width: 300px;
+    height: 90px;
+    border: none;
+    color: white;
+    border-right: 0px;
+    background-color: rgb(4, 31, 54);
+    border: solid 2px grey;
+}
+.input-box-description::placeholder{
+    font-size: 18px;
+}
+
+
+.ToDoList{
+    position: relative;
+
+
+}
+.output-list{
+    background-color: #1c1e38;
+    padding: 100px;
+    position: absolute;
+    left: 600px;
+    bottom: 4px;
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    border: solid 2px grey;
+    overflow:auto;
+    display: block;
+}
+.add{
+    background-color: #e59633 ;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 320px;
+    position:absolute;
+    top: 250px;
+    right: 105px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.task {
+    border: solid 1px black;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    width: auto; /* Make task container responsive */
+    max-width: 1200px; /* Ensure max-width is applied */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(4, 31, 54);
+    height: 150px; /* Let height adjust based on content */
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; /* Maintain task positioning */
+    color: white;
+    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5); /* Add shadow around the task box */
+    transition:  0.6s; /* Smooth transitions */
+    overflow: auto; /* Hide any content overflow */
+    margin-bottom: 15px; /* Space between tasks */
+    scale: 1; /* Ensure the scale is normal */
+}
+
+.task:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+    transform: scale(1.10); /* Slight scale-up effect */
+    transition: 0.3s ease-in-out;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 23px;
+    
+}
+
+.text1 {
+    margin-left: 20px;
+    font-size: 18px; /* Slightly smaller font for description */
+    color: #ccc; /* Subtle color for the description */
+    margin-top: 30px;
+    position: absolute;
+
+}
+
+.list {
+    aspect-ratio: 1; /* Ensure checkbox remains square */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular checkbox */
+    transform: translateY(4px);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.add:hover {
+    background-color: lightgreen;
+    color: white;
+    transition: 0.8s;
+}
+
+.remove {
+    background-color: red;
+    padding: 14px;
+    border: none;
+    border-radius: 8%;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 22px; /* Adjusted position to avoid overlap */
+    left: 630px;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5);
+}
+
+.remove:hover {
+    background-color: orangered;
+    opacity: 0.6;
+    transition: 0.6s;
+}
+
+.title{
+    padding: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color:#e59633;
+}
+.ee{
+    transform: translateY(40px);
+}
+.pendingComplete{
+    background-color:#e59633;
+    position: absolute;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    top: 10px;
+    left: 480px;
+    font-size: 12px;
+    transition: 0.3s;
+    text-align: center;
+}
+.TaskNo{
+    background-color:#2db7cc;
+    position: absolute;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    top: 10px;
+    left: 550px;
+    font-size: 12px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.title1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color:#e59633;
+    transform: translateY(-60px);
+}
+
+.taskNumber{
+    margin-top: 80px;
+    padding: 15px;
+}
+
+
+
